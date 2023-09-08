@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=6;
+        var fib=0;
+        if(num>1){
+            var pre=0;
+            var prev=1;
+            document.write("The fibonacci Series is : ");
+            document.write(pre);
+            document.write(","+prev);
+            for(i=2;i<=num-1;i++){
+    
+                fib=pre+prev;
+                pre=prev;
+                prev=fib;
+                document.write(","+fib);
+            }
+        }if(num==1){
+            fib=0;
+            document.write(fib);
+        }
+        
+    </script>
+</body>
+</html>
